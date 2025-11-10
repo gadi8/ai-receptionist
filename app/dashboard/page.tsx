@@ -109,7 +109,7 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
                     </td>
                   </tr>
                 ) : (
-                  leads.map((lead) => (
+                  leads.map((lead any) => (
                     <tr key={lead.id}>
                       <td className="px-4 py-3 text-slate-600">{formatDate(lead.createdAt)}</td>
                       <td className="px-4 py-3">
